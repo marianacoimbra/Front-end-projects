@@ -1,7 +1,15 @@
-import React from "react";
-
-function App() {
-  return <h1>Vem ai</h1>;
+import React, { Component } from "react";
+import { Form } from "./components/Form";
+import List from "./components/List";
+class App extends Component {
+  render() {
+    return (
+      <section>
+        <Form />
+        <List />
+      </section>
+    );
+  }
 }
 
 export default App;
