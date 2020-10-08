@@ -1,0 +1,91 @@
+.destaques {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  height: calc(100vh - 60px);
+  gap: 0.3rem;
+}
+.destaques__titulo {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fdfdfd;
+  padding: 0.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.destaques__principal {
+  background-image: url("https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Fortnite_Chapter2Season4_image1600w.jpg");
+  grid-column: 1/4;
+  grid-row: 1/3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(2) {
+  background-image: url("https://www.windowsclub.com.br/wp-content/uploads/2017/04/Battlegrounds-.jpg");
+  grid-column: 4/4;
+  grid-row: 1/1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(3) {
+  background-image: url("https://tecnoblog.net/wp-content/uploads/2015/06/slack-700x394.png");
+  grid-column: 4/4;
+  grid-row: 2/2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(4) {
+  background-image: url("https://imagens.canaltech.com.br/empresas/630.400.jpg");
+  grid-column: 4/4;
+  grid-row: 3/3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(5) {
+  background-image: url("https://www.cliccamaqua.com.br/images/noticias/img_49842_foto_1_a.jpg");
+  grid-column: 3/4;
+  grid-row: 3/3;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.destaques__categorias {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+
+.destaques__categorias___lista {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.destaques__categorias___item {
+  align-items: center;
+  border-left: 5px solid transparent;
+  background: #fdfdfd;
+  color: #333333;
+  display: flex;
+  padding: 1rem;
+  width: 50%;
+}
+
+.destaques__categorias___link {
+  color: inherit;
+}
+
+.caixa {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
