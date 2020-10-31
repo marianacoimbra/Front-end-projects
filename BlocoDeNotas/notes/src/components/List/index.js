@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "./Card";
+import CardContainer from "./Card";
 
 export default class List extends Component {
   render() {
@@ -8,7 +8,7 @@ export default class List extends Component {
         {Array.of("Job", "Study", "House Cleaning").map((category, index) => {
           return (
             <li key={index}>
-              <Card />
+              <CardContainer />
             </li>
           );
         })}
