@@ -2,13 +2,13 @@ import React from "react";
 
 import { Root } from "./styles";
 import Header from "../Header";
-import { Form } from "../Form";
+import { FormContainer } from "../Form";
 import List from "../List";
 
 function Layout() {
   return (
     <Root>
-      <Form />
+      <FormContainer />
       <List />
     </Root>
   );

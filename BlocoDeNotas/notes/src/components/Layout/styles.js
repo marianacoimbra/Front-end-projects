@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Root = styled.div`
   display: grid;
-  grid-template-rows: auto auto;
+  grid-template-columns: 450px auto;
   width: 100%;
   min-height: 100vh;
   background-color: #383a59;
