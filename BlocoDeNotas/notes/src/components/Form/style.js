@@ -4,7 +4,7 @@ import { Button } from "reactstrap";
 export const Container = styled.div`
   color: white;
   display: flex;
-
+  width: 100%;
   align-items: center;
   justify-content: flex-start;
   font-size: 20px;
@@ -16,6 +16,7 @@ export const FormBox = styled.div`
   justify-content: center;
   width: 300px;
   padding-left: 2em;
+  color: white;
 `;
 
 export const StyledButton = styled(Button)`
