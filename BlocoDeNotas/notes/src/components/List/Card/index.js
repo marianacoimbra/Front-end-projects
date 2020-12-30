@@ -8,10 +8,10 @@ export default class CardContainer extends Component {
       <Col>
         <StyledCard body>
           <CardTitle>
-            <h3>Title</h3>
+            <h3>{this.props.title}</h3>
           </CardTitle>
           <StyledCardText>
-            <p>Note..</p>
+            <p>{this.props.text}</p>
           </StyledCardText>
           <StyledButton color="danger">Delete</StyledButton>
         </StyledCard>

@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
   font-size: 20px;
+  overflow-y: scroll;
 `;
 
 export const FormBox = styled.div`

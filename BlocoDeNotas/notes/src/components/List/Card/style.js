@@ -13,5 +13,5 @@ export const StyledCard = styled(Card)`
 `;
 
 export const StyledCardText = styled(CardText)`
-  height: 70px;
+  height: 50px;
 `;

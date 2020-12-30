@@ -6,20 +6,10 @@ export default class List extends Component {
   render() {
     return (
       <Ul>
-        {Array.of(
-          "Job",
-          "Study",
-          "House Cleaning",
-          "Singing",
-          "Dancing",
-          "Games",
-          "Programming",
-          "Pop",
-          "Art"
-        ).map((category, index) => {
+        {this.props.notes.map((element, index) => {
           return (
             <Li key={index}>
-              <CardContainer />
+              <CardContainer title={element.title} text={element.text} />
             </Li>
           );
         })}
