@@ -30,7 +30,10 @@ export class FormContainer extends Component {
       <FormBox>
         <Form onSubmit={this._newNote.bind(this)}>
           <FormGroup>
-          <FontAwesomeIcon icon={faClipboard} style={{ marginRight: "10px" }} />
+            <FontAwesomeIcon
+              icon={faClipboard}
+              style={{ marginRight: "10px" }}
+            />
             <Label for="title">The Title</Label>
             <Input
               type="text"

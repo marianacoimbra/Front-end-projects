@@ -19,11 +19,22 @@ class Layout extends Component {
     this.setState(newState);
   }
 
+  deleteNote(index) {
+    let notes = this.state.notes;
+    notes.splice(index, 1);
+    this.setState({ notes: notes });
+  }
+
   render() {
     return (
       <Root>
+        {/* Aqui utilizamos o `bind` para que o `this` funcione dentro da nossa
+        callback */}
         <FormContainer newNote={this.newNote.bind(this)} />
-        <List notes={this.state.notes} />
+        <List
+          notes={this.state.notes}
+          deleteNote={this.deleteNote.bind(this)}
+        />
       </Root>
     );
   }
